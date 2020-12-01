@@ -1,4 +1,4 @@
 # ultimate-git-course
 A course from codewithmosh.com
 
-new line of code
+- `origin/master` is a remote tracking branch
