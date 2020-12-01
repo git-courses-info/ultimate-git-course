@@ -33,3 +33,20 @@ A course from codewithmosh.com
 
 - Use Releases to package your software, along with source code, binary files (e.g. compiled files of the app) and release notes.
 - When you create a Release on github, it will be added to the latest commit.
+
+### 12. Sharing Branches
+
+- Similarly to tags, branches are local, private by default.
+- Check if a branch has a remote tracking branch: `git branch -vv`
+
+        * feature-1 11eb84c 11. Releases
+        main      11eb84c [origin/main] 11. Releases
+
+- Check for remote branches: `git branch -r`
+
+        origin/HEAD -> origin/main
+        origin/main
+
+- So the first time you push a branch: `git push -u origin feature-1`
+- To delete a branch in remote repo: `git push -d origin feature-1`
+- To delete a branch in local repo: `git push -d feature-1`
