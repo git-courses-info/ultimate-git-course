@@ -56,3 +56,4 @@ A course from codewithmosh.com
 - If you create a branch in the remote repo and then do `git fetch`, and then run `git branch`, you only see `main`,
   because when we run `fetch`, we only get the remote branch. So then we need to create a local one and map it to the remote one.
   - git switch -C feature-1 origin/feature-1
+- Remove tracking branches that are deleted on the remote repo: `git remote prune origin`
