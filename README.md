@@ -50,3 +50,9 @@ A course from codewithmosh.com
 - So the first time you push a branch: `git push -u origin feature-1`
 - To delete a branch in remote repo: `git push -d origin feature-1`
 - To delete a branch in local repo: `git push -d feature-1`
+
+### 13. Colaboration Workflow
+
+- If you create a branch in the remote repo and then do `git fetch`, and then run `git branch`, you only see `main`,
+  because when we run `fetch`, we only get the remote branch. So then we need to create a local one and map it to the remote one.
+  - git switch -C feature-1 origin/feature-1
