@@ -57,3 +57,7 @@ A course from codewithmosh.com
   because when we run `fetch`, we only get the remote branch. So then we need to create a local one and map it to the remote one.
   - git switch -C feature-1 origin/feature-1
 - Remove tracking branches that are deleted on the remote repo: `git remote prune origin`
+
+### 14. Pull Requests
+
+- Pull requests let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch [docs](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests).
