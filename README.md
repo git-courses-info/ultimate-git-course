@@ -28,3 +28,8 @@ A course from codewithmosh.com
 - By default git doesn't push our `tags` to our repo... So we `git push origin v1.0`
 - To delete it: `git push origin --delete v1.0`
 - Delete it on the local repo: `git tag -d v1.0`
+
+### 11. Releases
+
+- Use Releases to package your software, along with source code, binary files (e.g. compiled files of the app) and release notes.
+- When you create a Release on github, it will be added to the latest commit.
