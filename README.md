@@ -2,8 +2,8 @@
 
 A course from codewithmosh.com
 
-<<<<<<< HEAD
 - `origin` is a reference to the cloned repo
+- `origin/master` is a remote tracking branch
 
 - git pull
   warning: Pulling without specifying how to reconcile divergent branches is
@@ -13,6 +13,4 @@ A course from codewithmosh.com
   - git config pull.rebase false # merge (the default strategy)
   - git config pull.rebase true # rebase
   - git config pull.ff only # fast-forward only
-=======
-- `origin/master` is a remote tracking branch
->>>>>>> b54290681dc123ea891dd4474189b2fd748cd526
+
