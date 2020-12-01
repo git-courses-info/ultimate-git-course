@@ -22,3 +22,9 @@ A course from codewithmosh.com
 - If you’re using a Mac, Git comes with an “osxkeychain” mode, which caches credentials in the secure keychain that’s attached to your system account. This method stores the credentials on disk, and they never expire, but they’re encrypted with the same system that stores HTTPS certificates and Safari auto-fills.
   - `git credential-osxkeychain`
   - `git config --global credential.helper osxkeychain`
+
+### 10. Sharing tags
+
+- By default git doesn't push our `tags` to our repo... So we `git push origin v1.0`
+- To delete it: `git push origin --delete v1.0`
+- Delete it on the local repo: `git tag -d v1.0`
