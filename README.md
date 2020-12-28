@@ -1,5 +1,7 @@
 # ultimate-git-course
 
+## 5. COLLABORATION
+
 A course from codewithmosh.com
 
 - `origin` is a reference to the cloned repo
@@ -57,3 +59,9 @@ A course from codewithmosh.com
   because when we run `fetch`, we only get the remote branch. So then we need to create a local one and map it to the remote one.
   - git switch -C feature-1 origin/feature-1
 - Remove tracking branches that are deleted on the remote repo: `git remote prune origin`
+
+...
+
+### 18. Milestones
+
+- We can add a banch of issues to a milestone, and then see the progress in that milestone.
