@@ -60,8 +60,18 @@ A course from codewithmosh.com
   - git switch -C feature-1 origin/feature-1
 - Remove tracking branches that are deleted on the remote repo: `git remote prune origin`
 
+<<<<<<< HEAD
 ...
 
 ### 18. Milestones
 
 - We can add a banch of issues to a milestone, and then see the progress in that milestone.
+=======
+### 14. Pull Requests
+
+- Pull requests let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.
+  - **Note: When working with pull requests, keep the following in mind:**
+  - If you're working in the shared repository model, we recommend that you use a topic branch for your pull request. While you can send pull requests from any branch or commit, with a topic branch you can push follow-up commits if you need to update your proposed changes.
+  - When pushing commits to a pull request, don't force push. Force pushing can corrupt your pull request.[docs](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests).
+- Pull requests display diffs to compare the changes you made in your topic branch against the base branch that you want to merge your changes into [docs](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-comparing-branches-in-pull-requests).
+>>>>>>> bd7529f02fe2c9dd8e6c166b9ed3abf017b064b5
