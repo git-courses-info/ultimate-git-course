@@ -142,5 +142,9 @@ Also:
 
 ### 6. Reverting Commits
 
-- `git revert `should be used to undo changes on a public branch, and `git reset` should be reserved for undoing changes on a private branch.
+- `git revert `should be used to undo changes on a public branch, and `git reset` should be reserved for undoing changes on a private branch. NOTE: If you change anything while reverting, and then push this will and then you should be able to push your changes. If some else made a commit, you will delete their code.
 - `git revert --no-commit`: Git is going to add the required changes to the staging area.
+
+test reverting
+test reverting
+test reverting
