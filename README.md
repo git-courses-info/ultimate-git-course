@@ -146,5 +146,3 @@ Also:
 - `git revert --no-commit`: Git is going to add the required changes to the staging area.
 
 test reverting
-test reverting
-test reverting
