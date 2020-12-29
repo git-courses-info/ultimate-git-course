@@ -143,5 +143,3 @@ Also:
 
 - `git revert `should be used to undo changes on a public branch, and `git reset` should be reserved for undoing changes on a private branch.
 - `git revert --no-commit`: Git is going to add the required changes to the staging area.
-
-test revert
