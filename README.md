@@ -27,6 +27,7 @@ A course from codewithmosh.com
 
 ### 10. Sharing tags
 
+- Tags are ref's that point to specific points in Git history. Tagging is generally used to capture a point in history that is used for a marked version release (i.e. v1. 0.1). A tag is like a branch that doesn't change. [Tagging](https://www.atlassian.com/git/tutorials/inspecting-a-repository/git-tag#:~:text=Tags%20are%20ref's%20that%20point,branch%20that%20doesn't%20change.)
 - By default git doesn't push our `tags` to our repo... So we `git push origin v1.0`
 - To delete it: `git push origin --delete v1.0`
 - Delete it on the local repo: `git tag -d v1.0`
@@ -58,7 +59,7 @@ A course from codewithmosh.com
 - If you create a branch in the remote repo and then do `git fetch`, and then run `git branch`, you only see `main`,
   because when we run `fetch`, we only get the remote branch. So then we need to create a local one and map it to the remote one.
   - git switch -C feature-1 origin/feature-1
-- Remove tracking branches that are deleted on the remote repo: `git remote prune origin`
+- Remove tracking branches that are deleted on the remote repo: `git remote prune origin`. Or `git fetch --prune`: git fetch --prune is the best utility for cleaning outdated branches. It will connect to a shared remote repository remote and fetch all remote branch refs. It will then delete remote refs that are no longer in use on the remote repository. [Git Prune](https://www.atlassian.com/git/tutorials/git-prune#:~:text=git%20fetch%20%2D%2Dprune%20is,use%20on%20the%20remote%20repository.)
 
 ### 14. Pull Requests
 
@@ -70,6 +71,49 @@ A course from codewithmosh.com
 
 ### 15. Resolving Conflicts
 
+### 16. Issues
+
+- Track all kind of issues like bagfixes, new features, enhancements, or any kind of ideas we want to discuss in the team.
+
 ### 18. Milestones
 
+- Use milestones to track the progress of varius issues.
 - We can add a banch of issues to a milestone, and then see the progress in that milestone.
+
+### 19. Contributing to open-source Projects
+
+- `Fork` the `repo`, `clone` it, make changes, `push`, when ready make a `pull request`, if ok then maintener will close it.
+
+### 20. Keeping a Forked Repository Up to Date
+
+- Add a new `remote` -call it `upstreem` or `base` with the address of the **original** `repo`. If the forked repo gets behind, you get a notification in github. Fetch the commits from `upstreem` and then push them to the forked repo. Then if there is a branch where we do work, it's a good practice to merge the main branch to that one, in case there are changes that could effect our work. This will reduce coflicts when mainter would want to close our pull request.
+
+### 21. Collaboration using VSCode
+
+### 21. Collaboration in GitKraken
+
+- Options:
+- Push a new `branch` to remote... To create a new branch, right click on the last commit of master... Make a commit in VSCode then in GitKraken right click on the new branch and push...
+- Push new `tags`.
+- Add new remotes (cloud icon on the left).
+- Manage pull requests (hub icon on the left). Right click on a branch - `Start a pull request...`
+
+## 5. REWRITING HISTORY
+
+To be able to extract meaningful info out of the history, we need to have a clean history, thus look out for:
+
+- Poor commit messages - Reword them.
+- Large commits - Split them.
+- Small commits - Squash them to related commits.
+
+Also:
+
+- Drop unwanted commits.
+- Modify the content of commits.
+
+**Golder rule:**
+
+- **DON'T REWRITE PUBLIC HISTORY**!
+
+- e.g.
+  - If you modify a commit you've allready pushed in github, git is going to make a new commit (because commits are immutable) so the history will change... Thus if you try to push, it will be rejected. You would need first to merge the origin/main with the local/main, resolve the conficts and then push. It's like you try to push after someone else has pushed to origin. In that case you could rather do a `git push -force`, to have a linear history.But how can one be sure that noone else has changed the orign/main?
