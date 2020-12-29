@@ -116,4 +116,4 @@ Also:
 - **DON'T REWRITE PUBLIC HISTORY**!
 
 - e.g.
-  - If you modify a commit you've allready pushed in github, git is going to make a new commit (because commits are immutable) so the history will change...
+  - If you modify a commit you've allready pushed in github, git is going to make a new commit (because commits are immutable) so the history will change... Thus if you try to push, it will be rejected. You would need first to merge the origin/main with the local/main, resolve the conficts and then push. It's like you try to push after someone else has pushed to origin. In that case you could rather do a `git push -force`, to have a linear history.But how can one be sure that noone else has changed the orign/main?
