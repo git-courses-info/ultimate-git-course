@@ -117,3 +117,5 @@ Also:
 
 - e.g.
   - If you modify a commit you've allready pushed in github, git is going to make a new commit (because commits are immutable) so the history will change...
+    Test if we can push a modified commit.
+    Test if we can push a modified commit.
