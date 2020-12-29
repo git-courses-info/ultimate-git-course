@@ -117,6 +117,28 @@ Also:
 
 - e.g.
 
-  - If you modify a commit you've allready pushed in github, git is going to make a new commit (because commits are immutable) so the history will change... Thus if you try to push, it will be rejected. You would need first to merge the origin/main with the local/main, resolve the conficts and then push. It's like you try to push after someone else has pushed to origin. In that case you could rather do a `git push -force`, to have a linear history.But how can one be sure that noone else has changed the orign/main?
+  - If you modify a commit you've allready pushed in github, git is going to make a new commit (because commits are immutable) so the history will change... Thus if you try to push, it will be rejected.
 
-  Test
+  ```js
+  ! [rejected]        main -> main (non-fast-forward)
+  error: failed to push some refs to 'https://github.com/footios/ultimate-git-course.git'
+  hint: Updates were rejected because the tip of your current branch is behind
+  hint: its remote counterpart. Integrate the remote changes (e.g.
+  hint: 'git pull ...') before pushing again.
+  hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+  ```
+
+  You would need first to merge the origin/main with the local/main, resolve the conficts and then push. It's like trying to push after someone else has pushed to origin. Be careful! Do NOT do a `git push --force`, just to have a linear history. If someone else pushed new code to orign/main, it will be deleted. And even if they haven't... when they will try to push, they would have to pull first and have a non-linear history in their repo. So...
+
+  **DON'T REWRITE PUBLIC HISTORY**!
+
+### 5. Undoing Commits
+
+- `hard reset`
+  - `soft`: Removes the commit only. It doesn't touch the staging area or the working directory, so we'll have changes in the staging area.
+  - `mixed`: Unstages files, so changes are in the working directory.
+  - `hard`: Discards local changes and we have a clean working directory.
+
+### 6. Reverting Commits
+
+- `git revert `should be used to undo changes on a public branch, and `git reset` should be reserved for undoing changes on a private branch.
