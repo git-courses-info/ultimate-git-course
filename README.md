@@ -97,3 +97,23 @@ A course from codewithmosh.com
 - Push new `tags`.
 - Add new remotes (cloud icon on the left).
 - Manage pull requests (hub icon on the left). Right click on a branch - `Start a pull request...`
+
+## 5. REWRITING HISTORY
+
+To be able to extract meaningful info out of the history, we need to have a clean history, thus look out for:
+
+- Poor commit messages - Reword them.
+- Large commits - Split them.
+- Small commits - Squash them to related commits.
+
+Also:
+
+- Drop unwanted commits.
+- Modify the content of commits.
+
+**Golder rule:**
+
+- **DON'T REWRITE PUBLIC HISTORY**!
+
+- e.g.
+  - If you modify a commit you've allready pushed in github, git is going to make a new commit (because commits are immutable) so the history will change...
