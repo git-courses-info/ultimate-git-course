@@ -1,5 +1,7 @@
 # ultimate-git-course
 
+NOTE: These notes go together with the cheat sheet that was provided by the course, which also has some extra notes, about some cmds that where missing.
+
 ## 5. COLLABORATION
 
 A course from codewithmosh.com
@@ -142,5 +144,7 @@ Also:
 
 ### 6. Reverting Commits
 
-- `git revert `should be used to undo changes on a public branch, and `git reset` should be reserved for undoing changes on a private branch. NOTE: After you change something while reverting, and then try to push, if some else made a commit, it will be rejected with a message like: `Updates were rejected because the tip of your current branch is behind its remote counterpart.`
-- `git revert --no-commit`: Git is going to add the required changes to the staging area.
+- The git revert command can be considered an 'undo' type command, however, it is not a traditional undo operation. Instead of removing the commit from the project history, it figures out how to invert the changes introduced by the commit and appends a new commit with the resulting inverse content. This prevents Git from losing history, which is important for the integrity of your revision history and for reliable collaboration.[pls read more... Git Revert](https://www.atlassian.com/git/tutorials/undoing-changes/git-revert#:~:text=Summary,in%20regards%20to%20losing%20work)
+- `git revert `should be used to undo changes on a public branch, and `git reset` should be reserved for undoing changes on a private branch.[pls read more... Resetting, Checking Out & Reverting](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
+- NOTE: After you change something while reverting, and then try to push, if someone else made a commit, your push operation will be rejected with message: `Updates were rejected because the tip of your current branch is behind its remote counterpart.`
+- `git revert --no-commit`: By adding `--no-commit` git will figure out the changes that need to be undone, and add the required changes to the staging area.
