@@ -153,3 +153,7 @@ Also:
 
 - `git reflog` to get all the commits. Then `git reset --hard HEAD{#} or ID to get the commit back.
 - `git reflog branchName` to get all the commits of a specifiek branch.
+
+### 8. Amending the Last Commit
+
+- In case you want to add something like new code on existing files, or even a new file to the last commit, after you stage the changes, instead creating a new commit, type `git commit --amend`.
