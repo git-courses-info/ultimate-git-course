@@ -148,3 +148,8 @@ Also:
 - `git revert `should be used to undo changes on a public branch, and `git reset` should be reserved for undoing changes on a private branch.[pls read more... Resetting, Checking Out & Reverting](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
 - NOTE: After you change something while reverting, and then try to push, if someone else made a commit, your push operation will be rejected with message: `Updates were rejected because the tip of your current branch is behind its remote counterpart.`
 - `git revert --no-commit`: By adding `--no-commit` git will figure out the changes that need to be undone, and add the required changes to the staging area.
+
+### 7. Recovering Lost Commits
+
+- `git reflog` to get all the commits. Then `git reset --hard HEAD{#} or ID to get the commit back.
+- `git reflog branchName` to get all the commits of a specifiek branch.
