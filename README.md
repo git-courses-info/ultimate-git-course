@@ -166,4 +166,5 @@ Also:
 
 ### 10. Dropping Commits
 
-- Start the rebase operation with the parent of the commit you want to drop.\`git rebase -i ID~1 or ID^`
+- Start the rebase operation with the parent of the commit you want to drop.\
+  `git rebase -i ID~1 or ID^`
