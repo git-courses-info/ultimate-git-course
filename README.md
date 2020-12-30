@@ -157,3 +157,9 @@ Also:
 ### 8. Amending the Last Commit
 
 - In case you want to add something like new code on existing files, or even a new file to the last commit, after you stage the changes, instead creating a new commit, type `git commit --amend`.
+
+### 9. Amending an Earlier Commit
+
+- We need to use **interactive rebasing**. With rebasing, we can replay a bunch of commits on top of another commit. Type `git rebase -i ID`.
+- **Reabasing rewrites history**. When you `edit` a commit, all the commits that follow will be recreated... So do NOT use `rebase` for published commits!
+- The changes you make in one earier commit get carried on to the next ones.
