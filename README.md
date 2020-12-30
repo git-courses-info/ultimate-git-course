@@ -163,3 +163,7 @@ Also:
 - We need to use **interactive rebasing**. With rebasing, we can replay a bunch of commits on top of another commit. Type `git rebase -i ID`.
 - **Reabasing rewrites history**. When you `edit` a commit, all the commits that follow will be recreated... So do NOT use `rebase` for published commits!
 - The changes you make in one earier commit get carried on to the next ones.
+
+### 10. Dropping Commits
+
+- Start the rebase operation with the parent of the commit you want to drop.\`git rebase -i ID~1 or ID^`
