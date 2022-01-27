@@ -2,7 +2,29 @@
 
 NOTE: These notes go together with the cheat sheet that was provided by the course, which also has some extra notes, about some cmds that where missing.
 
-## 5. COLLABORATION
+### 1. Getting started
+6. 
+- Configuration: specify: name, email, default editor, line ending. Specify in 3 levels:
+-  SYSTEM all users
+-  GLOBAL all repositories of current user
+-  LOCAL current repository
+-  e.g. `git config --global user.name "Fotios Tsakiris"`
+-  `git config --global core.editor "code --wait"`
+-  To edit the configuration file: `git config --global -e`
+-  `end of lines`:
+-  In windows they are specified with 2 special characters `\r` and `\n`, on macs and linux with `\n`. So we need to modify `core.autocrlf`. So for macs/linux we type: `git config --global core.autocrlf input` and windows `... true`
+7. Git Help
+- `git -h` or `git -help`
+
+### 2. Creating snapshots
+- `git init`, `ls -a`, `open .git` !!! remove: `rm -rf .git`
+4. staging area
+- `echo hello > file1.txt`, appent: `echo hello >> file1.txt` 
+
+
+
+
+### 5. COLLABORATION
 
 A course from codewithmosh.com
 
