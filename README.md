@@ -3,8 +3,7 @@
 NOTE: These notes go together with the cheat sheet that was provided by the course, which also has some extra notes, about some cmds that where missing.
 
 ### 1. Getting started
-6. 
-- Configuration: specify: name, email, default editor, line ending. Specify in 3 levels:
+6. Configuration: specify: name, email, default editor, line ending. Specify in 3 levels:
 -  SYSTEM all users
 -  GLOBAL all repositories of current user
 -  LOCAL current repository
@@ -18,11 +17,17 @@ NOTE: These notes go together with the cheat sheet that was provided by the cour
 
 ### 2. Creating snapshots
 - `git init`, `ls -a`, `open .git` !!! remove: `rm -rf .git`
-4. staging area
+4. Staging area
 - `echo hello > file1.txt`, appent: `echo hello >> file1.txt` 
-
-
-
+- just `git commit` Write short and under it a long description. 
+7. Skip staging area
+- `git commit -am "message" `
+8. renaming/movigs files `git mv main.js file1.js`
+9. Ignoring files ... 
+- `git rm -h`, removing file from staging area: `git rm --cached logs.js`
+- go to `github/github/gitignore` to see templates.
+11. Short status: `git status -s`
+12. Viewing staged and unstaged changes: `git diff --staged `
 
 ### 5. COLLABORATION
 
