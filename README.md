@@ -28,6 +28,20 @@ NOTE: These notes go together with the cheat sheet that was provided by the cour
 - go to `github/github/gitignore` to see templates.
 11. Short status: `git status -s`
 12. Viewing staged and unstaged changes: `git diff --staged `
+13. Use vscode as default diff tool: `git config --global diff.tool vscode`. 
+- Next is how to launch vscode: `git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"`
+- Now to check diffs type: `git difftool --staged`
+14. View history everything after `log` is optional: `git log --oneline --reverse`
+15. Show the changes of a commit: `git show id` or git `git show HAED~2`
+- to see only one file: `git show HAED~2:file1.txt`
+- to see all files and directories of a commit: `git ls-tree HEAD~2`
+- Git objects: Commits, Blobs, Trees, Tags.
+16. Unstaging files (version 2.28+): `git restore --staged file1.txt`
+17. Discarding local changes: `git clean -fd`
+18. Restore file to previous version: `git restore --source=HEAD~1 file1.js`
+19. Creating snapshots using gitkraken 
+
+
 
 ### 5. COLLABORATION
 
