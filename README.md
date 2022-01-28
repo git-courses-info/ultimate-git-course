@@ -41,6 +41,22 @@ NOTE: These notes go together with the cheat sheet that was provided by the cour
 18. Restore file to previous version: `git restore --source=HEAD~1 file1.js`
 19. Creating snapshots using gitkraken 
 
+#### 3. Browsing History
+3. Viewing history
+- see all the files that changed in the last commit: `git log --stat --oneline`
+- see the actual changes: `git log --patch --oneline`
+4. Formating the log output: `git log --pretty=format: "author: %Cgreen%an %Creset committed the hash: %h on date: %cd " `
+6. Create alias: `git config --global alias.lg "log --pretty=format: '%Cgreen%an %Creset committed the hash: %h on date: %cd' "`
+7. View a commit: `git show HEAD~2 --name-only`, `git show HEAD~2 --name-status`
+8. View changes across 2 commits: `git diff HEAD~2 HEAD file.js` or `... --name-only`
+9. Checking out a commit: `git checkout id`.
+- DO NOT MAKE COMMITS, just try out experimental changes. 
+- TO see all commits: `git log --oneline --all`.
+10 Find bugs with Bisect: `git bisect start`
+- Give it a bad commit: `git bisect bad id`
+- Give it a good commit: `git bisect good id`
+- Head moves in the middle, if it's a good commit type `git bisect good` etc
+- At the end: `git bisect reset `
 
 
 ### 5. COLLABORATION
