@@ -3,7 +3,7 @@
 NOTE: These notes go together with the cheat sheet that was provided by the course, which also has some extra notes, about some cmds that where missing.
 
 This is from [Kent Dodds](https://app.egghead.io/lessons/javascript-how-to-install-git-scm?pl=how-to-contribute-to-an-open-source-project-on-github):\
-For your global `.gitignore` filee: go to [.gitignore](https://github.com/github/gitignore), type the `t` which is a shortcut and search for `osx`
+For your global `.gitignore` filee: go to [.gitignore](https://github.com/github/gitignore), type the `t` which is a shortcut and search for `os` and you get [this](https://github.com/github/gitignore/blob/main/Global/macOS.gitignore)
 
 ### 1. Getting started
 6. Configuration: specify: name, email, default editor, line ending. Specify in 3 levels:
